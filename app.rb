@@ -11,7 +11,7 @@ get '/' do
   erb :index
 end 
 
-post '/checkout' do 
+get '/checkout' do 
   session["item"] = params["item"]
   @sessions = session
   
