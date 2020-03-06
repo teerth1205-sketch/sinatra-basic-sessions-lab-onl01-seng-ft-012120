@@ -13,9 +13,8 @@ end
 
 post '/checkout' do 
   @sessions = session
-  item = params["item"]
-  session[:item] = item 
- 
+    item = params["item"]
+    @sessions[:item] = item
   
   erb :checkout 
 end 
