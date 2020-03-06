@@ -16,4 +16,5 @@ post '/checkout' do
   @sessions = sessions 
   
   erb :checkout 
+end 
 end
