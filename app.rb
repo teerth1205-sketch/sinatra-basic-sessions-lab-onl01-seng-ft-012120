@@ -12,5 +12,6 @@ get '/' do
 end 
 
 post '/checkout' do 
+  @sessions = sessions 
   sessions[item] = params["item"]
 end
